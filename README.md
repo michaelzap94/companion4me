@@ -2,7 +2,7 @@
 
 A social media android app where lonely people can find other people that need a friend. Developed in Java, PHP and MySQL.
 
-This was a university group project and the app's server host is not working anymore (since it was free for a limited time). However, you can see a video from when the app was fully working.
+This was a university group project and the app's server host is not working anymore (since it was free for a limited time). However, you can see a screencast of when the app was fully working.
 
 The app server files are included in the folder "serverFiles" writen in PHP.
 
