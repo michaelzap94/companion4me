@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/testClear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="#03A9F4">
+
+    <ScrollView
+        android:id="@+id/scrollSearchInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+    <!--=================================================================================Location-->
+
+            <!--=====================================================================================Test-->
+
+
+            <EditText
+                android:id="@+id/name_search_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:maxLength="30"
+                android:hint=" Name:"
+                android:padding="5dp"
+                android:background="@drawable/curved_corner"
+                android:textStyle="italic"
+                android:inputType="textPersonName"
+                />
+
+    <!--======================================================================================Age-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/curved_corner">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:text="Age Range:"
+                android:textSize="17dp"
+                android:textStyle="italic" />
+
+            <!--Min Age-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Min:"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/minage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="number"
+                android:maxLength="2"/>
+
+            <!--Max Age-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max:"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/maxage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="number"
+                android:maxLength="2"/>
+
+        </LinearLayout>
+    <!--================================================================================Education-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/curved_corner"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Nationality: "
+            android:id="@+id/search_TextView_nationality"
+            android:textSize="17dp"
+            android:textStyle="italic" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nationalitySearch"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/curved_corner"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Gender:       "
+                    android:textSize="17dp"
+                    android:textStyle="italic" />
+
+                <Spinner
+                    android:id="@+id/gender_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/curved_corner"
+        android:padding="5dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Education:  "
+            android:textSize="17dp"
+            android:textStyle="italic" />
+
+        <Spinner
+            android:id="@+id/edu_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <!--================================================================================Interests-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/curved_corner"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Music: "
+                    android:id="@+id/search_musictext"
+                    android:textSize="17dp"
+                    android:textStyle="italic" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/music_search"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/curved_corner"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Movies: "
+                    android:id="@+id/mov_searchtxt"
+                    android:textSize="17dp"
+                    android:textStyle="italic" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/movies_search"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/curved_corner"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Sports: "
+                    android:id="@+id/sports_searchtxt"
+                    android:textSize="17dp"
+                    android:textStyle="italic" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sports_search"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+
+            <!--Religion-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/curved_corner"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Food: "
+                    android:id="@+id/food_searchtxt"
+                    android:textSize="17dp"
+                    android:textStyle="italic" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/food_search"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+            <!--Hobbies-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/curved_corner"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Hobbies: "
+                    android:id="@+id/hobbies_searchtxt"
+                    android:textSize="17dp"
+                    android:textStyle="italic" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hobbies_search"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</ScrollView>
+
+
+    <!--==================================================================================Buttons-->
+    <LinearLayout
+        android:id="@+id/linearLayoutSearchButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:background="@drawable/button_login"
+            android:layout_gravity="center"
+            android:textColor="#727272"
+            android:layout_weight="1"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_weight="1"
+            android:textColor="#727272"
+            android:background="@drawable/button_signup"
+            android:layout_gravity="center"
+            android:onClick=""
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
